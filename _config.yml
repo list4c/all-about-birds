@@ -23,8 +23,8 @@ email: marius.listevnik@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   A great resource for all fans of ornithology, birdwatchers, bird lovers. 
   Photo gallery, descriptions of birds and interesting stories.  
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/all-about-birds" # the subpath of your site, e.g. /blog
+url: "https://list4c.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 
 
 # Build settings
