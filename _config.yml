@@ -28,7 +28,9 @@ url: "https://list4c.github.io/" # the base hostname & protocol for your site, e
 
 
 # Build settings
-theme: minima
+
+# No longer using the default theme
+# theme: minima
 plugins:
   - jekyll-feed
 
