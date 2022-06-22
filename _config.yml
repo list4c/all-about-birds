@@ -27,6 +27,9 @@ baseurl: "/all-about-birds" # the subpath of your site, e.g. /blog
 url: "https://list4c.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 
 
+# Add author - field supplied with minima theme, but absent from the example data
+author: Mariusz Listewnik
+
 # Build settings
 
 # No longer using the default theme
