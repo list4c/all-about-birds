@@ -11,19 +11,30 @@ layout: default
 
   {%- if site.posts.size > 0 -%}
     <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
-    <ul class="post-list">
+    <ul class="post-list"> 
       {%- for post in site.posts -%}
       <li>
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
         <h3>
           <a class="post-link" href="{{ post.url | relative_url }}">
             {{ post.title | escape }}
           </a>
-        </h3>
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+          <span class="post-meta">{{ post.date | date: date_format }}</span>
+        <br>
+        {%- if post.image -%}
+        <a href="{{ post.url | relative_url }}">
+          <img src="{{- post.image | relative_url -}}" alt="{{post.alt-txt}}" class="blog-roll">
+        </a>
+        
+        {%- else -%}
+          {%- assign defaultPostImage = '/assets/images/default-unsplash.jpg' -%}
+        <img src="{{- defaultPostImage | relative_url -}}" alt="" class="blog-roll">
+        
         {%- endif -%}
+        </h3>
+        <!-- {%- if site.show_excerpts -%} -->
+          {{ post.excerpt }}
+        <!-- {%- endif -%} -->
       </li>
       {%- endfor -%}
     </ul>
