@@ -1,0 +1,15 @@
+---
+layout: post
+title:  "Great Tit"
+date:   2022-06-22 13:02:39 +0200
+image: /assets/images/great-tit-unsplash.jpg
+alt-image: "Great tit image"
+---
+
+
+![{{page.alt-txt}}]({{page.image | relative_url}})
+
+Great tits are very popular birds in my area (Poland). Here is a video showing great tits feasting in winter:
+
+
+ {% include embed.html type = 'youtube' uuid='V2YD0Bp0UBc' %}
