@@ -1,0 +1,9 @@
+{% if include.type == 'youtube' %}
+<div class="embed-responsive embed-responsive-16by9">
+    <iframe class="embed-responsive-item"
+            src="https://www.youtube.com/embed/{{include.uuid}}?rel=0&iv_load_policy=3"
+            allowfullscreen="allowfullscreen"
+            frameborder="0">
+        </iframe>
+</div> 
+{% endif %}
